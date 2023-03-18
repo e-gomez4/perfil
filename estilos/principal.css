@@ -48,7 +48,12 @@
 }
 
 .seleccion-idioma {
-
+    margin-top: 0;
+    border: 2px black solid;
+    padding: 10px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 .listaHeader {
@@ -68,7 +73,8 @@
 }
 
 .button {
-    margin-top: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
     border: none;
     background-color: transparent;
     font-weight: bold;
@@ -89,18 +95,18 @@
 
 @media screen and (max-width: 767px) {
     .a-header {
-        font-size: 160px;
+        font-size: 150%;
     }
 }
   
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .a-header {
-        font-size: 200%;
+        font-size: 170%;
     }  
 }
   
 @media screen and (min-width: 992px) {
     .a-header {
-        font-size: 170%;
+        font-size: 180%;
     } 
 }
