@@ -134,6 +134,9 @@
     .header-left-pequeño {
         display: flex;
     }
+    .header-right {
+        margin-right: 70px;
+    }
 }
   
 @media screen and (min-width: 768px) and (max-width: 991px) {
