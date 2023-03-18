@@ -3,7 +3,8 @@ function mostrarDivPrincipal() {
     const divPrincipal = document.getElementById("contenedorPrincipal");
     
     boton.addEventListener("click", function() {
-      boton.style.display = "none"; // oculta el botón
-      divPrincipal.style.display = "block"; // muestra el div principal
+        setTimeout(boton.style.display = "none",
+        divPrincipal.style.display = "block", 3000)
+      
     });
 }
