@@ -5,7 +5,17 @@
         <title>INICIO</title>
         <link rel="stylesheet" type="text/css" href="estilos/principal.css">
     </head>
-    <script src="javascript/funciones.js"></script>
+    <script>
+        function mostrarDivPrincipal() {
+            const boton = document.getElementById("botonIniciar");
+            const divPrincipal = document.getElementById("contenedorPrincipal");
+            
+            boton.addEventListener("click", function() {
+            boton.style.display = "none"; // oculta el botón
+            divPrincipal.style.display = "block"; // muestra el div principal
+            });
+        }
+    </script>
     <body class="principal">
         <div id="divBoton" class="divBoton">
             <button id="botonIniciar" onclick="mostrarDivPrincipal()" class=".botonOnOff">Iniciar Sistema</button>
