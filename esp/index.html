@@ -3,13 +3,17 @@
         <meta charset="UTF-8">
         <meta name="author" content="Efrem Gómez">
         <title>INICIO</title>
-        <link rel="stylesheet" type="text/css" href="estilos/principal.css">
+        <link rel="stylesheet" type="text/css" href="/estilos/principal.css">
     </head>
+    <script src="/javascript/funciones.js"></script>
     <body class="principal">
-        <button id="botonIniciar">Iniciar Sistema</button>
-        <header class="top">
-            
-        </header>
-
+        <div id="divBoton" class="divBoton">
+            <button id="botonIniciar" onclick="mostrarDivPrincipal()" class=".botonOnOff">Iniciar Sistema</button>
+        </div>
+        <div id="contenedorPrincipal" class="ocultar">
+            <header class="top">
+                <p>Lorep ipsum</p>
+            </header>
+        </div>
     </body>
 </html>

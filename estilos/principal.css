@@ -1,3 +1,19 @@
+.divBoton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.botonOnOff {
+
+}
+
+.ocultar {
+    display: none;
+}
+
 .principal {
     background-image: none;
 }
