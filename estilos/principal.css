@@ -11,6 +11,7 @@
 }
 
 
+
 .ocultar {
     display: none;
 }
@@ -31,12 +32,36 @@
     display: flex;
 }
 
-.header-left {
+.header-left-grande {
     display: flex;
     height: 100%;
     width: 70%;
     align-items: center;
     justify-content: center;
+}
+
+.header-left-pequeño {
+    display: none;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonMenu {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.divOcultar {
+    display: none;
+}
+
+.botonMenu:hover .divOcultar {
+    display: block;
 }
 
 .header-right {
@@ -96,6 +121,15 @@
 @media screen and (max-width: 767px) {
     .a-header {
         font-size: 150%;
+    }
+    .seleccion-idioma {
+        font-size: large;
+    }
+    .header-left-grande {
+        display: none;
+    }
+    .header-left-pequeño {
+        display: flex;
     }
 }
   
