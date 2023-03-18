@@ -10,20 +10,6 @@
 
 }
 
-progress {
-    width: 100%;
-    height: 20px;
-    border-radius: 10px;
-    background-color: #f2f2f2;
-  }
-  progress::-webkit-progress-value {
-    background-color: #4CAF50;
-    border-radius: 10px;
-}
-  progress::-webkit-progress-bar {
-    background-color: #f2f2f2;
-    border-radius: 10px;
-}
 
 .ocultar {
     display: none;
@@ -31,8 +17,90 @@ progress {
 
 .principal {
     background-image: none;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .top {
+    position: fixed;
+    top: 0;
+    height: 15%;
+    width: 100%;
+    margin-left: 0;
+    background-color: #8E9EFF;
+    display: flex;
+}
 
+.header-left {
+    display: flex;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-right {
+    display: flex;
+    height: 100%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.seleccion-idioma {
+
+}
+
+.listaHeader {
+    text-align: center;
+    list-style: none;
+    display: block;
+    width: 100%;
+    padding-inline-start: 0;
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: 5%;
+    display: inline;
+    text-align: center;
+    margin-top: 0;
+}
+
+.button {
+    margin-top: 0;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.button:hover {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 10%;
+    color: #7ABA96;
+}
+
+.a-header {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 767px) {
+    .a-header {
+        font-size: 160px;
+    }
+}
+  
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .a-header {
+        font-size: 200%;
+    }  
+}
+  
+@media screen and (min-width: 992px) {
+    .a-header {
+        font-size: 170%;
+    } 
 }
