@@ -115,14 +115,18 @@
     font-weight: bold;
     font-size: x-large;
     background-size: 10px;
+    outline: none;
+    box-sizing: border-box;
 }
 
 .div-seleccion {
-    display: inherit;
     border: 2px black solid;
     width: 80px;
+    display: flex;
     padding: 10px;
     padding-right: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .lista-menu {
@@ -165,7 +169,6 @@
     border: none;
     background-color: transparent;
     font-weight: bold;
-    font-size: 10%;
     color: #7ABA96;
 }
 
@@ -199,6 +202,9 @@
     }
     .header-right {
         margin-right: 5%;
+    }
+    .div-seleccion {
+        align-items: normal;
     }
 }
   
