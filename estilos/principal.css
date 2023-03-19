@@ -44,7 +44,7 @@
 .header-left-pequeño {
     display: none;
     height: 100%;
-    width: 70%;
+    width: 75%;
     align-items: center;
     justify-content: center;
 }
@@ -60,9 +60,10 @@
 }
 
 .dropdown-menu {
+    display: none;
     padding-inline-start: 0;
     margin-top: 183px;
-
+    margin-right: -3%;
 }
 
 .animacion-a {
@@ -102,18 +103,26 @@
 .header-right {
     display: flex;
     height: 100%;
-    width: 30%;
+    width: 25%;
     align-items: center;
     justify-content: center;
 }
 
 .seleccion-idioma {
     margin-top: 0;
-    border: 2px black solid;
-    padding: 10px;
+    border: none;
     background-color: transparent;
     font-weight: bold;
     font-size: x-large;
+    background-size: 10px;
+}
+
+.div-seleccion {
+    display: inherit;
+    border: 2px black solid;
+    width: 80px;
+    padding: 10px;
+    padding-right: 0;
 }
 
 .lista-menu {
@@ -189,7 +198,7 @@
         display: flex;
     }
     .header-right {
-        margin-right: 70px;
+        margin-right: 5%;
     }
 }
   
