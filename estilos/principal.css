@@ -192,7 +192,7 @@
     border: 2px solid #8E9EFF;
     padding: 20px;
     width: 70%;
-    height: 40%;
+    height: auto;
     margin-top: 105px;
     margin-left: 20px;
     float: left;
@@ -215,7 +215,7 @@
     border-radius: 10px;
     border: 2px solid #8E9EFF;
     padding: 20px;
-    width: 100%;
+    width: 70%;
     height: 30%;
     margin-top: 0;
     margin-left: 20px;
@@ -317,7 +317,6 @@ h1 {
     }
     .despues-header {
         margin-top: 130px;
-        height: 35%;
     }
     .segundo-div {
         margin-top: 30px;
@@ -334,8 +333,6 @@ h1 {
     }
     .despues-header {
         margin-top: 130px;
-        height: 30%;
-
     }
     .segundo-div {
         margin-top: 30px;
