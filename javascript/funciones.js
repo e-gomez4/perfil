@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
     userSeleccion.value = seleccionGuardada;
   }
   userSeleccion.addEventListener("change", function() {
-  const seleccion = userSeleccion.value;
-  if (seleccion == "eng") {
-      window.location.href = "/eng/index.html";
-  }
+    const seleccion = userSeleccion.value;
+    if (seleccion == "eng") {
+        window.location.href = "/eng/index.html";
+    }
   });
 
   const boton = document.getElementById("mostrar-menu");
@@ -22,14 +22,15 @@ document.addEventListener("DOMContentLoaded", function() {
       menu.style.display = "none";
     }
   });
-});
 
-function mostrarDivPrincipal() {
-  const boton = document.getElementById("botonIniciar");
+  const botonIniciar = document.getElementById("botonIniciar");
   const divPrincipal = document.getElementById("contenedorPrincipal");
+  const divBoton = document.getElementById("divBoton");
   
-  boton.addEventListener("click", function() {
-    boton.style.display = "none"; // oculta el botón
+  botonIniciar.addEventListener("click", function() {
+    divBoton.style.display = "none";
+    botonIniciar.style.display = "none"; // oculta el botón
     divPrincipal.style.display = "block"; // muestra el div principal
   });
-}
+});
+
