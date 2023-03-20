@@ -268,7 +268,7 @@ h1 {
 }
 
 * {
-    font-family: ;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width: 767px) {
