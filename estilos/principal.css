@@ -20,6 +20,7 @@
     background-image: none;
     margin-left: 0;
     margin-right: 0;
+    background-color: rgba(29, 27, 27, 0.953);
 }
 
 .top {
@@ -185,30 +186,39 @@
 }
 
 .despues-header {
+    border-radius: 10px;
+    border: 2px solid #8E9EFF;
+    padding: 20px;
     width: 70%;
     height: 40%;
     margin-top: 105px;
     margin-left: 20px;
     float: left;
     min-width: 350px;
+    min-height: 150px;
+    background-color: white;
 }
 
 .aside-derecho {
-    width: 25%;
+    width: 20%;
     height: 40%;
     margin-top: 105px;
-    float: right;
+    float: left;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .segundo-div {
+    border-radius: 10px;
+    border: 2px solid #8E9EFF;
+    padding: 20px;
     width: 100%;
     height: 30%;
     margin-top: 0;
     margin-left: 20px;
     float: left;
+    background-color: white;
 }
 
 .img-aside {
@@ -218,6 +228,39 @@
 
 p {
     text-align: justify;
+}
+
+.lista-sobremi {
+    margin-bottom: 8px;
+
+}
+
+.letra-large {
+    font-size: large;
+}
+
+select {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.a-header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.a-header2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width: 767px) {
@@ -246,12 +289,13 @@ p {
         display: none;
     }
     .despues-header {
-        width: 90%;
-        margin-top: 90px;
+        width: 82%;
+        margin-top: 110px;
+        min-height: 250px;
     }
     .segundo-div {
         margin-top: 30px;
-        width: 90%;
+        width: 82%;
     }
 }
   
@@ -261,9 +305,14 @@ p {
     }
     .aside-derecho {
         height: 30%;
+        margin-top: 130px;
     }
     .despues-header {
-        height: 30%;
+        margin-top: 130px;
+        height: 35%;
+    }
+    .segundo-div {
+        margin-top: 30px;
     }
 }
   
@@ -272,10 +321,16 @@ p {
         font-size: 180%;
     } 
     .aside-derecho {
+        margin-top: 130px;
         height: 30%;
     }
     .despues-header {
-        height: 35%;
+        margin-top: 130px;
+        height: 30%;
+
+    }
+    .segundo-div {
+        margin-top: 30px;
     }
     .img-aside {
         height: 150px;
