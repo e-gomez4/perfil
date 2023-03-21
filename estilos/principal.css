@@ -19,7 +19,11 @@
 }
 
 .principal {
-    background-image: none;
+    background-image: url(/imagenes/body-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity:97%;
     margin-left: 0;
     margin-right: 0;
     background-color: rgba(29, 27, 27, 0.953);
@@ -31,9 +35,11 @@
     height: 15%;
     width: 100%;
     margin-left: 0;
+    background-image: url("/imagenes/header-web1.PNG");
     background-color: #8E9EFF;
     display: flex;
     min-height: 100px;
+    border-bottom: 4px solid rgb(66, 155, 167);
 }
 
 .header-left-grande {
@@ -56,9 +62,11 @@
 .botonMenu {
     margin-top: 1%;
     margin-bottom: 1%;
-    border: 2px solid black;
+    border: 2px solid rgba(99, 237, 255, 0.584);
     padding: 10px;
-    background-color: transparent;
+    background-color: black;
+    opacity: 100%;
+    color: white;
     font-weight: bold;
     font-size: large;
 }
@@ -118,14 +126,17 @@
     background-color: transparent;
     font-weight: bold;
     font-size: x-large;
+    color: white;
     background-size: 10px;
     outline: none;
     box-sizing: border-box;
 }
 
 .div-seleccion {
-    border: 2px black solid;
+    border: 2px rgba(99, 237, 255, 0.584) solid;
     width: 80px;
+    background-color: black;
+    opacity: 90%;
     display: flex;
     padding: 10px;
     padding-right: 0;
@@ -138,11 +149,12 @@
     margin-right: 5%;
     padding: 10px;
     display:grid;
-    background-color: aqua;
+    background-color: rgb(66, 155, 167);
     text-align: center;
     margin-top: -1px;
     margin-bottom: -2px;
     margin-left: -2px;
+    opacity: 100%;
 }
 
 .listaHeader {
@@ -179,6 +191,9 @@
 .a-header {
     text-decoration: none;
     color: inherit;
+    background-color: black;
+    opacity: 90%;
+    padding: 10px;
 }
 
 .a-header2 {
@@ -189,21 +204,21 @@
 
 .despues-header {
     border-radius: 10px;
-    border: 2px solid #8E9EFF;
+    border: 2px solid rgba(99, 237, 255, 0.584);
+    background-color: rgb(20, 19, 19);
     padding: 20px;
     width: 70%;
     height: auto;
     margin-top: 105px;
     margin-left: 20px;
     float: left;
-    min-width: 350px;
+    min-width: 200px;
     min-height: 150px;
-    background-color: white;
 }
 
 .aside-derecho {
     width: 20%;
-    height: 40%;
+    height: auto;
     margin-top: 105px;
     float: left;
     display: flex;
@@ -213,14 +228,15 @@
 
 .segundo-div {
     border-radius: 10px;
-    border: 2px solid #8E9EFF;
+    border: 2px solid rgba(99, 237, 255, 0.584);
+    background-color: rgb(20, 19, 19);
     padding: 20px;
     width: 70%;
-    height: 30%;
+    height: auto;
     margin-top: 0;
     margin-left: 20px;
+    margin-bottom: 25px;
     float: left;
-    background-color: white;
 }
 
 .img-aside {
@@ -230,15 +246,25 @@
 
 p {
     text-align: justify;
+    color: white;
 }
 
 .lista-sobremi {
     margin-bottom: 8px;
+    color: white;
 
 }
 
 .letra-large {
     font-size: large;
+}
+
+footer {
+    display: flex;
+    border-top: 4px solid rgb(66, 155, 167);
+    width: 100%;
+    height: 20%;
+    background-color: black;
 }
 
 @font-face {
@@ -252,10 +278,12 @@ select {
 
 a.a-header {
     font-family: Arial, Helvetica, sans-serif;
+    color: white
 }
 
 a.a-header2 {
     font-family: Arial, Helvetica, sans-serif;
+    color: white
 }
 
 button {
@@ -265,6 +293,7 @@ button {
 h1 {
     font-family: 'PermanentMarker';
     font-weight: normal;
+    color: white;
 }
 
 * {
@@ -297,13 +326,13 @@ h1 {
         display: none;
     }
     .despues-header {
-        width: 82%;
-        margin-top: 110px;
+        width: 80%;
+        margin-top: 115px;
         min-height: 250px;
     }
     .segundo-div {
-        margin-top: 30px;
-        width: 82%;
+        margin-top: 15px;
+        width: 80%;
     }
 }
   
@@ -319,7 +348,7 @@ h1 {
         margin-top: 130px;
     }
     .segundo-div {
-        margin-top: 30px;
+        margin-top: 25px;
     }
 }
   
@@ -335,7 +364,7 @@ h1 {
         margin-top: 130px;
     }
     .segundo-div {
-        margin-top: 30px;
+        margin-top: 25px;
     }
     .img-aside {
         height: 150px;
