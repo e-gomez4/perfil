@@ -388,4 +388,7 @@ h1 {
     .top {
         position: relative;
     }
+    .despues-header {
+        margin-top: 25px;
+    }
 }
