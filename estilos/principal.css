@@ -1,3 +1,8 @@
+.estilo-borrado {
+    background-color: rgba(29, 27, 27, 0.953);
+    background-color: #8E9EFF;
+}
+
 .divBoton {
     display: flex;
     justify-content: space-evenly;
@@ -26,7 +31,6 @@
     opacity:97%;
     margin-left: 0;
     margin-right: 0;
-    background-color: rgba(29, 27, 27, 0.953);
 }
 
 .top {
@@ -36,7 +40,6 @@
     width: 100%;
     margin-left: 0;
     background-image: url("/imagenes/header-web1.PNG");
-    background-color: #8E9EFF;
     display: flex;
     min-height: 100px;
     border-bottom: 4px solid rgb(66, 155, 167);
@@ -183,9 +186,8 @@
 
 .button:hover {
     border: none;
-    background-color: transparent;
     font-weight: bold;
-    color: #7ABA96;
+    color: rgb(66, 155, 167);
 }
 
 .a-header {
@@ -231,12 +233,16 @@
     border: 2px solid rgba(99, 237, 255, 0.584);
     background-color: rgb(20, 19, 19);
     padding: 20px;
-    width: 70%;
+    width: 33%;
     height: auto;
     margin-top: 0;
     margin-left: 20px;
     margin-bottom: 25px;
     float: left;
+}
+
+.tercer-div {
+    width: 54%;
 }
 
 .img-aside {
@@ -349,6 +355,9 @@ h1 {
     }
     .segundo-div {
         margin-top: 25px;
+    }
+    .tercer-div {
+        width: 50%;
     }
 }
   
