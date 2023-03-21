@@ -383,3 +383,9 @@ h1 {
         width: 150px;
     }
 }
+
+@media screen and (max-height: 300px) {
+    .top {
+        position: relative;
+    }
+}
