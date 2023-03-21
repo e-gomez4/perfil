@@ -24,7 +24,7 @@
 }
 
 .principal {
-    background-image: url(/imagenes/body-background.jpg);
+    background-image: url("../imagenes/body-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +39,7 @@
     height: 15%;
     width: 100%;
     margin-left: 0;
-    background-image: url("/imagenes/header-web1.PNG");
+    background-image: url("../imagenes/header-web1.PNG");
     display: flex;
     min-height: 100px;
     border-bottom: 4px solid rgb(66, 155, 167);
