@@ -24,11 +24,11 @@
 }
 
 .principal {
-    background-image: url("../imagenes/body-background.jpg");
+    background-image: url("../imagenes/body-background3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity:97%;
+    opacity:100%;
     margin-left: 0;
     margin-right: 0;
 }
@@ -384,7 +384,7 @@ h1 {
     }
 }
 
-@media screen and (max-height: 300px) {
+@media screen and (max-height: 600px) {
     .top {
         position: relative;
     }
