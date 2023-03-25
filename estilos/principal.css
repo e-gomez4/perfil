@@ -24,7 +24,7 @@
 }
 
 .principal {
-    background-image: url("../imagenes/body-background3.jpg");
+    background-color: rgb(231, 231, 231);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -204,10 +204,15 @@
     margin-right: 10px;
 }
 
+.button-darkmode {
+    padding: 9px; 
+    border-left: 10px;
+}
+
 .despues-header {
     border-radius: 10px;
     border: 2px solid rgba(99, 237, 255, 0.584);
-    background-color: rgb(20, 19, 19);
+    background-color: rgb(141 141 141);
     padding: 20px;
     width: 70%;
     height: auto;
@@ -231,7 +236,7 @@
 .segundo-div {
     border-radius: 10px;
     border: 2px solid rgba(99, 237, 255, 0.584);
-    background-color: rgb(20, 19, 19);
+    background-color: rgb(141 141 141);
     padding: 20px;
     width: 33%;
     height: auto;
@@ -252,12 +257,11 @@
 
 p {
     text-align: justify;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .lista-sobremi {
     margin-bottom: 8px;
-    color: white;
 
 }
 
@@ -299,7 +303,7 @@ button {
 h1 {
     font-family: 'PermanentMarker';
     font-weight: normal;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 * {
