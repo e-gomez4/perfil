@@ -25,6 +25,7 @@
 
 .principal {
     background-color: #e7e7e7;
+    transition: background-image 1s ease-in-out;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -101,11 +102,11 @@
     display: grid;
 }
 
-.animacion-d {
+/*.animacion-d {
     animation-name: desaparecer;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
-  }
+  } */
   
 @keyframes desaparecer {
     from {
@@ -154,7 +155,7 @@
     margin-right: 5%;
     padding: 10px;
     display:grid;
-    background-color: rgb(66, 155, 167);
+    background-color: #429ba7;
     text-align: center;
     margin-top: -1px;
     margin-bottom: -2px;
@@ -209,11 +210,12 @@
 .button-darkmode {
     padding: 9px; 
     border-left: 10px;
+    background-color: khaki;
 }
 
 .despues-header {
     border-radius: 10px;
-    border: 2px solid rgba(99, 237, 255, 0.584);
+    border: 2px solid #a4a5a594;
     background-color: #c2c2c2;
     padding: 20px;
     width: 70%;
@@ -221,7 +223,7 @@
     margin-top: 105px;
     margin-left: 20px;
     float: left;
-    min-width: 200px;
+    min-width: 300px;
     min-height: 150px;
 }
 
@@ -237,19 +239,21 @@
 
 .segundo-div {
     border-radius: 10px;
-    border: 2px solid rgba(99, 237, 255, 0.584);
+    border: 2px solid #a4a5a594;
     background-color: #c2c2c2;
     padding: 20px;
     width: 33%;
     height: auto;
     margin-top: 0;
     margin-left: 20px;
+    min-width: 300px;
     margin-bottom: 25px;
     float: left;
 }
 
 .tercer-div {
     width: 54%;
+    min-width: 300px;
 }
 
 .img-aside {
@@ -257,10 +261,10 @@
     width: 100px;
 }
 
-p {
+/* p {
     text-align: justify;
     color: rgb(0, 0, 0);
-}
+} */
 
 .lista-sobremi {
     margin-bottom: 8px;
@@ -271,12 +275,18 @@ p {
     font-size: large;
 }
 
+.letra-footer {
+    color: white;
+    margin-left: 20px;
+}
+
 footer {
     display: flex;
     border-top: 4px solid rgb(66, 155, 167);
     width: 100%;
     height: 20%;
     background-color: black;
+    margin-bottom: -8px;
 }
 
 @font-face {
@@ -357,7 +367,7 @@ h1 {
     }
 }
   
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 767px) and (max-width: 991px) {
     .a-header {
         font-size: 170%;
     }
@@ -402,5 +412,9 @@ h1 {
     }
     .despues-header {
         margin-top: 25px;
+    }
+    #contenedorPrincipal {
+        margin-top: -8px;
+        margin-bottom: -8px;
     }
 }
