@@ -30,8 +30,7 @@
     background-repeat: no-repeat;
     background-position: center;
     opacity:100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
 }
 
 .top {
@@ -40,7 +39,8 @@
     height: 15%;
     width: 100%;
     margin-left: 0;
-    background-image: url("../imagenes/header-web1.PNG");
+    /*background-image: url("../imagenes/header-web1.PNG");*/
+    background-color: black;
     display: flex;
     min-height: 100px;
     min-width: 300px;
@@ -223,7 +223,6 @@
     margin-top: 105px;
     margin-left: 20px;
     float: left;
-    min-width: 300px;
     min-height: 150px;
 }
 
@@ -246,14 +245,12 @@
     height: auto;
     margin-top: 0;
     margin-left: 20px;
-    min-width: 300px;
     margin-bottom: 25px;
     float: left;
 }
 
 .tercer-div {
     width: 54%;
-    min-width: 300px;
 }
 
 .img-aside {
@@ -289,6 +286,7 @@ footer {
     background-color: black;
     margin-bottom: -8px;
     min-width: 300px;
+    min-height: 160px;
 }
 
 .footer-left {
@@ -373,20 +371,23 @@ h1 {
         width: 80%;
         margin-top: 117px;
         min-height: 250px;
+        min-width: 300px;
     }
     .segundo-div {
         margin-top: 15px;
         width: 80%;
+        min-width: 300px;
     }
     .tercer-div {
         margin-top: -12px;
+        min-width: 300px;
     }
     .button-darkmode {
         padding: 5px;
     }
 }
   
-@media screen and (min-width: 767px) and (max-width: 991px) {
+@media screen and (min-width: 767px) and (max-width: 1015px) {
     .a-header {
         font-size: 170%;
     }
@@ -396,19 +397,23 @@ h1 {
     }
     .despues-header {
         margin-top: 130px;
+        width: 41%;
     }
     .segundo-div {
-        margin-top: 25px;
+        margin-top: 130px;
+        height: auto;
+        width: 41%;
     }
     .tercer-div {
-        width: 43%;
+        margin-top: 15px;
+        width: 91%;
     }
     .letra-footer {
         margin-left: 120px;
     }
 }
   
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1015px) {
     .a-header {
         font-size: 180%;
     } 
@@ -417,10 +422,19 @@ h1 {
         height: 30%;
     }
     .despues-header {
+        min-height: 52%;
+        height: auto;
+        width: 27%;
+        /*margin-left: 50px;*/
         margin-top: 130px;
+        margin-bottom: 52px;
+        padding-bottom: 5px;
     }
     .segundo-div {
-        margin-top: 25px;
+        min-height: 50%;
+        height: auto;
+        width: 27%;
+        margin-top: 130px;
     }
     .img-aside {
         height: 150px;
