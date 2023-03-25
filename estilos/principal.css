@@ -24,7 +24,7 @@
 }
 
 .principal {
-    background-color: rgb(231, 231, 231);
+    background-color: #e7e7e7;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,6 +42,7 @@
     background-image: url("../imagenes/header-web1.PNG");
     display: flex;
     min-height: 100px;
+    min-width: 300px;
     border-bottom: 4px solid rgb(66, 155, 167);
 }
 
@@ -142,6 +143,7 @@
     opacity: 90%;
     display: flex;
     padding: 10px;
+    margin-right: 40px;
     padding-right: 0;
     align-items: center;
     justify-content: center;
@@ -212,7 +214,7 @@
 .despues-header {
     border-radius: 10px;
     border: 2px solid rgba(99, 237, 255, 0.584);
-    background-color: rgb(141 141 141);
+    background-color: #c2c2c2;
     padding: 20px;
     width: 70%;
     height: auto;
@@ -236,7 +238,7 @@
 .segundo-div {
     border-radius: 10px;
     border: 2px solid rgba(99, 237, 255, 0.584);
-    background-color: rgb(141 141 141);
+    background-color: #c2c2c2;
     padding: 20px;
     width: 33%;
     height: auto;
@@ -325,12 +327,15 @@ h1 {
     }
     .header-left-pequeño {
         display: flex;
+        width: 60%;
     }
     .header-right {
         margin-right: 5%;
+        width: 40%;
     }
     .div-seleccion {
         align-items: normal;
+        margin-right: 10px;
     }
     .aside-derecho {
         display: none;
@@ -346,6 +351,9 @@ h1 {
     }
     .tercer-div {
         margin-top: -12px;
+    }
+    .button-darkmode {
+        padding: 5px;
     }
 }
   

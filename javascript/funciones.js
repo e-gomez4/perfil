@@ -38,20 +38,41 @@ document.addEventListener("DOMContentLoaded", function() {
   const divDespuesHeader = document.getElementById("despuesHeader");
   const divSegundoHeader = document.getElementById("segundoHeader");
   const divtercerHeader = document.getElementById("tercerHeader");
-  
+  var modoOscuro = false;
+
   botondarkmode.addEventListener("click", function() {
-    var letralista = document.getElementsByClassName("letra-divs");
-    for (var i = 0; i < letralista.length; i++) {
-      letralista[i].style.color = "white";
+    if (modoOscuro) {
+      // Código para revertir el modo oscuro
+      var letralista = document.getElementsByClassName("letra-divs");
+      for (var i = 0; i < letralista.length; i++) {
+        letralista[i].style.color = "black";
+      }
+      bodyPrincipal.style.backgroundImage = "none";
+      bodyPrincipal.style.backgroundColor = "#e7e7e7";
+      divDespuesHeader.style.backgroundColor = "#c2c2c2";
+      divSegundoHeader.style.backgroundColor = "#c2c2c2"; 
+      divtercerHeader.style.backgroundColor = "#c2c2c2";
+      var titulosdivs = document.getElementsByClassName("titulos-divs");
+      for (var i = 0; i < titulosdivs.length; i++) {
+        titulosdivs[i].style.color = "black";
+      }
+      modoOscuro = false;
+    } else {
+      // Código para aplicar el modo oscuro
+      var letralista2 = document.getElementsByClassName("letra-divs");
+      for (var i = 0; i < letralista2.length; i++) {
+        letralista2[i].style.color = "white";
+      }
+      bodyPrincipal.style.backgroundImage = "url(../imagenes/body-background3.jpg)"
+      divDespuesHeader.style.backgroundColor = "#1a1a1a";
+      divSegundoHeader.style.backgroundColor = "#1a1a1a"; 
+      divtercerHeader.style.backgroundColor = "#1a1a1a";
+      var titulosdivs = document.getElementsByClassName("titulos-divs");
+      for (var i = 0; i < titulosdivs.length; i++) {
+        titulosdivs[i].style.color = "white";
+      }
+      modoOscuro = true;
     }
-    bodyPrincipal.style.backgroundImage = "url(../imagenes/body-background3.jpg)"
-    divDespuesHeader.style.backgroundColor = "#1a1a1a";
-    divSegundoHeader.style.backgroundColor = "#1a1a1a"; 
-    divtercerHeader.style.backgroundColor = "#1a1a1a";
-    var titulosdivs = document.getElementsByClassName("titulos-divs");
-    for (var i = 0; i < titulosdivs.length; i++) {
-      titulosdivs[i].style.color = "white";
-    }
-  });
+  });  
 });
 
