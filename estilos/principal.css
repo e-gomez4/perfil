@@ -278,6 +278,10 @@
     margin-bottom: 0;
 }
 
+.titulo-footer {
+    font-size: x-large;
+}
+
 footer {
     display: flex;
     border-top: 4px solid rgb(66, 155, 167);
@@ -369,7 +373,7 @@ h1 {
     }
     .despues-header {
         width: 80%;
-        margin-top: 117px;
+        margin-top: 130px;
         min-height: 250px;
         min-width: 300px;
     }
@@ -396,11 +400,11 @@ h1 {
         margin-top: 130px;
     }
     .despues-header {
-        margin-top: 130px;
+        margin-top: 15%;
         width: 41%;
     }
     .segundo-div {
-        margin-top: 130px;
+        margin-top: 15%;
         height: auto;
         width: 41%;
     }
@@ -413,7 +417,7 @@ h1 {
     }
 }
   
-@media screen and (min-width: 1015px) {
+@media screen and (min-width: 1015px) and (max-width: 2400px) {
     .a-header {
         font-size: 180%;
     } 
@@ -426,7 +430,7 @@ h1 {
         height: auto;
         width: 27%;
         /*margin-left: 50px;*/
-        margin-top: 165px;
+        margin-top: 11%;
         margin-bottom: 52px;
         padding-bottom: 5px;
     }
@@ -434,7 +438,7 @@ h1 {
         min-height: 50%;
         height: auto;
         width: 27%;
-        margin-top: 165px;
+        margin-top: 11%;
     }
     .img-aside {
         height: 150px;
@@ -445,12 +449,68 @@ h1 {
     }
 }
 
+@media screen and (min-width: 2400px) {
+    .a-header {
+        font-size: 180%;
+    } 
+    .aside-derecho {
+        margin-top: 130px;
+        height: 30%;
+    }
+    .despues-header {
+        min-height: 52%;
+        height: auto;
+        width: 27%;
+        /*margin-left: 50px;*/
+        margin-top: 10%;
+        margin-bottom: 52px;
+        padding-bottom: 5px;
+        font-size: xx-large;
+    }
+    .segundo-div {
+        min-height: 50%;
+        height: auto;
+        width: 27%;
+        margin-top: 10%;
+        font-size: xx-large;
+    }
+    .img-aside {
+        height: 150px;
+        width: 150px;
+    }
+    .letra-footer {
+        margin-left: 120px;
+    }
+    .letra-large, .letra-divs {
+        font-size: xx-large;
+    }
+    a.a-header {
+        font-size: 480%;
+    }
+    
+    a.a-header2 {
+        font-size: 320%;
+    }
+    .titulo-footer {
+        font-size: 400%;
+    }
+    .letra-footer {
+        font-size: 320%;
+    }
+    .agrandar-footer {
+        margin-top: 5%;
+    }
+}
+
 @media screen and (max-height: 600px) {
     .top {
         position: relative;
     }
     .despues-header {
-        margin-top: 25px;
+        margin-top: 5%;
+    }
+    .segundo-div {
+        margin-top: 5%;
     }
     #contenedorPrincipal {
         margin-top: -8px;
