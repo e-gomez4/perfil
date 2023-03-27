@@ -261,6 +261,29 @@
     width: 54%;
 }
 
+.desplegable {
+    height: 4%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.desplegable-oculto {
+    /*transition: opacity 0.5s ease-in-out;*/
+    /*border-bottom: 1px solid black;*/
+}
+
+.titulo-desplegable {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.flecha-abajo {
+    height: 20px;
+    width: 25px;
+}
+
 .img-aside {
     height: 100px;
     width: 100px;
