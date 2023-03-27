@@ -80,7 +80,7 @@
 .dropdown-menu {
     display: none;
     padding-inline-start: 0;
-    margin-top: 183px;
+    margin-top: 139px;
     margin-right: -3%;
 }
 
@@ -263,6 +263,7 @@
 
 .desplegable {
     height: 4%;
+    min-height: 20px;
     width: 100%;
     display: flex;
     align-content: center;
@@ -297,6 +298,10 @@
 .lista-sobremi {
     margin-bottom: 8px;
 
+}
+
+.letra-divs {
+    margin-top: 10px;
 }
 
 .letra-large {

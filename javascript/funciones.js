@@ -110,6 +110,15 @@ document.addEventListener("DOMContentLoaded", function() {
   const divDesplegable2 = document.getElementById("desplegable2");
   const divDesplegableOculto2 = document.getElementById("desplegable-oculto2");
   const ImgDesplegable2 = document.getElementById("imagen-desplegable2");
+  const divDesplegable3 = document.getElementById("desplegable3");
+  const divDesplegableOculto3 = document.getElementById("desplegable-oculto3");
+  const ImgDesplegable3 = document.getElementById("imagen-desplegable3");
+  const divDesplegable4 = document.getElementById("desplegable4");
+  const divDesplegableOculto4 = document.getElementById("desplegable-oculto4");
+  const ImgDesplegable4 = document.getElementById("imagen-desplegable4");
+  const divDesplegable5 = document.getElementById("desplegable5");
+  const divDesplegableOculto5 = document.getElementById("desplegable-oculto5");
+  const ImgDesplegable5 = document.getElementById("imagen-desplegable5");
 
   divDesplegable1.addEventListener("click", function() {
     if (divDesplegableOculto1.style.display === "none") {
@@ -128,6 +137,36 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       divDesplegableOculto2.style.display = "none";
       ImgDesplegable2.style.transform = "rotate(0deg)";
+    }
+  });
+
+  divDesplegable3.addEventListener("click", function() {
+    if (divDesplegableOculto3.style.display === "none") {
+      divDesplegableOculto3.style.display = "flex";
+      ImgDesplegable3.style.transform = "rotate(180deg)";
+    } else {
+      divDesplegableOculto3.style.display = "none";
+      ImgDesplegable3.style.transform = "rotate(0deg)";
+    }
+  });
+
+  divDesplegable4.addEventListener("click", function() {
+    if (divDesplegableOculto4.style.display === "none") {
+      divDesplegableOculto4.style.display = "flex";
+      ImgDesplegable4.style.transform = "rotate(180deg)";
+    } else {
+      divDesplegableOculto4.style.display = "none";
+      ImgDesplegable4.style.transform = "rotate(0deg)";
+    }
+  });
+
+  divDesplegable5.addEventListener("click", function() {
+    if (divDesplegableOculto5.style.display === "none") {
+      divDesplegableOculto5.style.display = "flex";
+      ImgDesplegable5.style.transform = "rotate(180deg)";
+    } else {
+      divDesplegableOculto5.style.display = "none";
+      ImgDesplegable5.style.transform = "rotate(0deg)";
     }
   });
 });
