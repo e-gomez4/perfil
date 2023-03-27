@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       /*bodyPrincipal.style.backgroundImage = "linear-gradient(rgba(20, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/body-background3.jpg)";*/
       /*bodyPrincipal.style.backgroundImage = "url(../imagenes/body-background3.jpg)";*/
-      bodyPrincipal.style.backgroundColor = "#302f2f"
+      bodyPrincipal.style.backgroundColor = "#201f1f"
       divDespuesHeader.style.transition = "1s ease"
       divDespuesHeader.style.backgroundColor = "#1a1a1a";
       divDespuesHeader.style.borderColor = "#429ba7";
