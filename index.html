@@ -1,152 +1,86 @@
-<html style="min-height: 100vh; position: relative;">
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Efrem Gómez">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>INICIO</title>
-        <link rel="stylesheet" type="text/css" href="estilos/principal.css">
-        <script src="javascript/funciones.js"></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Coming Soon - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="principal" class="principal">
-        <div id="divBoton" class="divBoton" style="display: flex;">
-            <p style="font-size: xx-large; margin-top: -20px; margin-bottom: -50px; text-align: center; color: black;">ESTA WEB ESTÁ EN MANTENIMIENTO</p>
-            <img src="imagenes/mantenimiento-web.png" width="300px" height="300px">
-            <button id="botonIniciar" class="botonOnOff" style="display: flex;">ACCEDER DE TODAS FORMAS</button>
+    <body>
+        <!-- Background Video-->
+        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
+        <!-- Masthead-->
+        <div class="masthead">
+            <div class="masthead-content text-white">
+                <div class="container-fluid px-4 px-lg-0">
+                    <h1 class="fst-italic lh-1 mb-4">La web está en mantenimiento</h1>
+                    <p class="mb-5">Última actualización: 28/03/2023, 22:00h</p>
+                    <button class="btn btn-primary"><a href="webSinAcabar/index.html" style="color: white; font-size: large;">Acceder Igualmente</a></button>
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <!--
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                         Email address inpu
+                        <div class="row input-group-newsletter">
+                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                        </div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
+                     Submit success message-->
+                        
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3 mt-2">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                         Submit error message
+                        
+                        This is what your users will see when there is
+                         an error submitting the form
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                    </form>-->
+                </div>
+            </div>
         </div>
-        <!---->
-        <div id="contenedorPrincipal" class="ocultar" style="display: none;">
-            <header id="top" class="top">
-                <nav class="header-left-grande">
-                    <ul class="listaHeader">
-                        <li class="menu"><button class="button button:hover"><a href="index.html" class="a-header">INICIO</a></button></li>
-                        <li class="menu"><button class="button button:hover"><a href="" class="a-header">EXPERIENCIA</a></button></li>
-                        <li class="menu"><button class="button button:hover"><a href="" class="a-header">ESTUDIOS</a></button></li>
-                        <li class="menu"><button class="button button:hover"><a href="" class="a-header">EXTRA</a></button></li>
-                    </ul>
-                </nav>
-                <nav class="header-left-pequeño">
-                    <button id="mostrar-menu" class="botonMenu botonMenu:hover">MENU</button>
-                    <ul id="dropdown-menu" class="dropdown-menu animacion-a" style="display: none;">
-                        <li class="lista-menu"><a href="#" class="a-header2">INICIO</a></li>
-                        <li class="lista-menu"><a href="#" class="a-header2">EXPERIENCIA</a></li>
-                        <li class="lista-menu"><a href="#" class="a-header2">ESTUDIOS</a></li>
-                        <li class="lista-menu"><a href="#" class="a-header2">EXTRA</a></li>
-                      </ul>
-                </nav>
-                <nav class="header-right">
-                    <div class="div-seleccion">
-                        <img src="imagenes/spain.png" width="20px" height="20px" style="margin-right: 4px;">
-                        <select id="seleccion-usuario" class="seleccion-idioma">
-                            <option value="esp" id="es">ES</option>
-                            <option value="eng" id="en">EN</option>
-                        </select>
-                    </div>
-                    <button id="darkmode" class="button-darkmode"><img src="imagenes/brightness.png" style="height: 30px; width: 30px;"></button>
-                </nav>
-            </header>
-            <div id="despuesHeader" class="despues-header">
-                <h1 class="titulos-divs" style="margin-top: 0;">BIENVENID@</h1>
-                <p class="letra-large letra-divs">Mi nombre es Efrem y esta es mi web. Todo el código y estilo ha sido creado totalmente por mi.
-                Aquí podrás encontrar información y detalles extra que no encontrarás en mi currículum. Al ser una web pública, he evitado poner los datos más privados.<br><br>
-                La idea es que me podáis conocer mejor, que sepáis más sobre mis conocimientos, experiencias, estudios, etc.</p>
-                <p class="letra-large letra-divs" style="align-items: center; display: flex;"><img src="imagenes/advertencia.png" width="20px" height="20px"> &nbsp; Aviso: Web en mantenimiento, sin finalizar &nbsp; <img src="imagenes/advertencia.png" width="20px" height="20px"></p>
+        <!-- Social Icons-->
+        <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
+        <!--
+        <div class="social-icons">
+            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
+                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
             </div>
-            <!--<aside class="aside-derecho"><img src="imagenes/informacion.png" class="img-aside"></aside>-->
-            <div id="segundoHeader" class="segundo-div">
-                <h1 class="titulos-divs" style="margin-top: 0;">SOBRE MI</h1>
-                <ul>
-                    <li class="lista-sobremi letra-large letra-divs">Me considero una persona responsable y organizada.</li>
-                    <li class="lista-sobremi letra-large letra-divs">También soy meticuloso. Cuando hago las cosas, me gusta hacerlas bien.</li>
-                    <li class="lista-sobremi letra-large letra-divs">Trabajo en equipo con liderazgo</li>
-                </ul>
-            </div>
-            <div id="tercerHeader" class="segundo-div tercer-div">
-                <h1 class="titulos-divs" style="margin-top: 0;">CONOCIMIENTOS</h1>
-                <div id="desplegable1" class="desplegable"><h3 class="titulo-desplegable">SISTEMAS</h3><img id="imagen-desplegable1" src="imagenes/down-arrow.png" class="flecha-abajo"></div>
-                    <div id="desplegable-oculto1" class="desplegable-oculto animacion-a" style="display: none;">
-                        <p class="letra-large letra-divs">
-                        · Familiarización con Windows y Linux. También con sus versiones de servidores.
-                        <br>· Sistemas de archivos, manipulación de discos y particiones.
-                        <br>· Gestores de arranque (GRUB, Windows Boot Manager).
-                        <br>· Instalación y clonación de sistemas, desplegamiento de imágenes (PXE, USB, etc).
-                        <br>· Recuperación de sistemas y clonaje de discos duros (Hiren's Boot CD, Ultimate Boot CD, GRUB Rescuer, etc).
-                        <br>· Administración e implementación de Directorio Activo (Samba & Kerberos, AD Windows, herramientas RSAT). 
-                        <br>· Administración de permisos, usuarios y grupos.
-                        <br>· Implementación de copias de seguridad y RAIDs.
-                        <br>· Implementación de servidores (SMTP, DNS, DHCP, HTTP/S).
-                        <br>
-                        </p>
-                    </div>
-                <div id="desplegable2" class="desplegable"><h3 class="titulo-desplegable">REDES</h3><img id="imagen-desplegable2" src="imagenes/down-arrow.png" class="flecha-abajo"></div>
-                    <div id="desplegable-oculto2" class="desplegable-oculto animacion-a" style="display: none;">
-                        <p class="letra-large letra-divs">
-                        · Modelo TCP/IP y OSI.
-                        <br>· Implementación de redes (defaults gateways, switches, IPs, máscaras de red, DNS, DHCPs, etc).
-                        <br>· Subnetting.
-                        <br>· Tipos de topologias.
-                        <br>· Routing estático y dinámico (RIP, OSPF)
-                        <br>· Sniffers (wireshark).
-                        <br>· Firewall y sus reglas.
-                        <br>· Protocolos de encriptación (TLS, SSL)
-                        <br>· Control Remoto (SSH, Telnet, RDP, etc).
-                        <br>· Protocolos y puertos (ICMP, DNS, DHCP, etc).
-                        <br>· VLANs (temario actual)
-                        </p>
-                    </div>
-                <div id="desplegable3" class="desplegable"><h3 class="titulo-desplegable">PROGRAMACIÓN</h3><img id="imagen-desplegable3" src="imagenes/down-arrow.png" class="flecha-abajo"></div>
-                    <div id="desplegable-oculto3" class="desplegable-oculto animacion-a" style="display: none;">
-                        <p class="letra-large letra-divs">
-                        · Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        </p>
-                    </div>
-                <div id="desplegable4" class="desplegable"><h3 class="titulo-desplegable">BASES DE DATOS</h3><img id="imagen-desplegable4" src="imagenes/down-arrow.png" class="flecha-abajo"></div>
-                    <div id="desplegable-oculto4" class="desplegable-oculto animacion-a" style="display: none;">
-                        <p class="letra-large letra-divs">
-                        · Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        </p>
-                    </div>
-                <div id="desplegable5" class="desplegable"><h3 class="titulo-desplegable">WEB</h3><img id="imagen-desplegable5" src="imagenes/down-arrow.png" class="flecha-abajo"></div>
-                    <div id="desplegable-oculto5" class="desplegable-oculto animacion-a" style="display: none;">
-                        <p class="letra-large letra-divs">
-                        · Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        <br>· Lorem Ipsum
-                        </p>
-                    </div>
-            </div>
-            <div class="segundo-div agrandar-footer" style="height: 20px; margin-top: 0; background-color: transparent; border: none; margin-bottom: 0; min-height: 0; padding: 0;"></div>
-        </div>
-        <footer>
-            <div class="footer-left">
-                <p class="letra-footer titulo-footer">CONTACTO: </p>
-                <p class="letra-footer letra-large"><img src="imagenes/e-mail.png" style="height: 20px; width: 20px; opacity: 0.7;"> &nbsp; efremgg2004@gmail.com</p>
-                <p class="letra-footer letra-large"><img src="imagenes/linkedin.png" style="height: 20px; width: 20px;"> &nbsp; Efrem Gómez</p>
-            </div>
-            <div class="footer-right">
-                <a class="letra-footer letra-large" href="creditos.html">CRÉDITOS</a>
-            </div>
-        </footer>
+        </div>-->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

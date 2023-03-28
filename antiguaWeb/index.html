@@ -1,0 +1,155 @@
+<html style="min-height: 100vh; position: relative;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Efrem Gómez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INICIO</title>
+        <link rel="stylesheet" type="text/css" href="estilos/principal.css">
+        <script src="javascript/funciones.js"></script>
+    </head>
+    <body id="principal" class="principal">
+        <div id="divBoton" class="divBoton" style="display: flex;">
+            <p style="font-size: xx-large; margin-top: -20px; margin-bottom: -50px; text-align: center; color: black;">ESTA WEB ESTÁ EN MANTENIMIENTO</p>
+            <img src="imagenes/mantenimiento-web.png" width="300px" height="300px">
+            <button id="botonIniciar" class="botonOnOff" style="display: flex;">ACCEDER DE TODAS FORMAS</button>
+        </div>
+        <!---->
+        <div id="contenedorPrincipal" class="ocultar" style="display: none;">
+            <header id="top" class="top">
+                <nav class="header-left-grande">
+                    <ul class="listaHeader">
+                        <li class="menu"><button class="button button:hover"><a href="index.html" class="a-header">INICIO</a></button></li>
+                        <li class="menu"><button class="button button:hover"><a href="" class="a-header">EXPERIENCIA</a></button></li>
+                        <li class="menu"><button class="button button:hover"><a href="" class="a-header">ESTUDIOS</a></button></li>
+                        <li class="menu"><button class="button button:hover"><a href="" class="a-header">EXTRA</a></button></li>
+                    </ul>
+                </nav>
+                <nav class="header-left-pequeño">
+                    <button id="mostrar-menu" class="botonMenu botonMenu:hover">MENU</button>
+                    <ul id="dropdown-menu" class="dropdown-menu animacion-a" style="display: none;">
+                        <li class="lista-menu"><a href="#" class="a-header2">INICIO</a></li>
+                        <li class="lista-menu"><a href="#" class="a-header2">EXPERIENCIA</a></li>
+                        <li class="lista-menu"><a href="#" class="a-header2">ESTUDIOS</a></li>
+                        <li class="lista-menu"><a href="#" class="a-header2">EXTRA</a></li>
+                      </ul>
+                </nav>
+                <nav class="header-right">
+                    <div class="div-seleccion">
+                        <img src="imagenes/spain.png" width="20px" height="20px" style="margin-right: 4px;">
+                        <select id="seleccion-usuario" class="seleccion-idioma">
+                            <option value="esp" id="es">ES</option>
+                            <option value="eng" id="en">EN</option>
+                        </select>
+                    </div>
+                    <button id="darkmode" class="button-darkmode"><img src="imagenes/brightness.png" style="height: 30px; width: 30px;"></button>
+                </nav>
+            </header>
+            <div id="despuesHeader" class="despues-header">
+                <h1 class="titulos-divs" style="margin-top: 0;">BIENVENID@</h1>
+                <p class="letra-large letra-divs">Mi nombre es Efrem y esta es mi web. 
+                Todo el código y estilo ha sido creado totalmente por mi. <br><br>
+                Hay que tener en cuenta que esta no es una web profesional (tampoco es mi especialidad). 
+                Es un complemento de mi currículum y aquí podrás encontrar información extra
+                sobre mi, mis conocimientos, estudios y experiencias laborales. 
+                Al ser una web pública, he evitado poner los datos más privados.<br><br>
+                </p>
+                <p class="letra-large letra-divs" style="align-items: center; display: flex;"><img src="imagenes/advertencia.png" width="20px" height="20px"> &nbsp; Aviso: Web en mantenimiento, sin finalizar &nbsp; <img src="imagenes/advertencia.png" width="20px" height="20px"></p>
+            </div>
+            <!--<aside class="aside-derecho"><img src="imagenes/informacion.png" class="img-aside"></aside>-->
+            <div id="segundoHeader" class="segundo-div">
+                <h1 class="titulos-divs" style="margin-top: 0;">SOBRE MI</h1>
+                <p class="letra-large letra-divs">
+                    Me considero una persona responsable y organizada.
+                <br>También soy meticuloso. Cuando hago las cosas, me gusta hacerlas bien.
+                <br>Trabajo en equipo con liderazgo.
+                </p>
+                <!--<ul>
+                    <li class="lista-sobremi letra-large letra-divs">Me considero una persona responsable y organizada.</li>
+                    <li class="lista-sobremi letra-large letra-divs">También soy meticuloso. Cuando hago las cosas, me gusta hacerlas bien.</li>
+                    <li class="lista-sobremi letra-large letra-divs">Trabajo en equipo con liderazgo</li>
+                </ul>-->
+            </div>
+            <div id="tercerHeader" class="segundo-div tercer-div">
+                <h1 class="titulos-divs" style="margin-top: 0;">CONOCIMIENTOS</h1>
+                <div id="desplegable1" class="desplegable"><h3 class="titulo-desplegable">SISTEMAS</h3><img id="imagen-desplegable1" src="imagenes/down-arrow.png" class="flecha-abajo"></div>
+                    <div id="desplegable-oculto1" class="desplegable-oculto animacion-a" style="display: none;">
+                        <p class="letra-large letra-divs">
+                        Familiarización con Windows y Linux. También con sus versiones de servidores.
+                        <br>Sistemas de archivos, manipulación de discos y particiones.
+                        <br>Gestores de arranque (GRUB, Windows Boot Manager).
+                        <br>Instalación y clonación de sistemas, desplegamiento de imágenes (PXE, USB, etc).
+                        <br>Recuperación de sistemas y clonaje de discos duros (Hiren's Boot CD, Ultimate Boot CD, GRUB Rescuer, etc).
+                        <br>Administración e implementación de Directorio Activo (Samba & Kerberos, AD Windows, herramientas RSAT). 
+                        <br>Administración de permisos, usuarios y grupos.
+                        <br>Implementación de copias de seguridad y RAIDs.
+                        <br>Despliegue de servidores (SMTP, DNS, DHCP, HTTP/S).
+                        <br>
+                        </p>
+                    </div>
+                <div id="desplegable2" class="desplegable"><h3 class="titulo-desplegable">REDES</h3><img id="imagen-desplegable2" src="imagenes/down-arrow.png" class="flecha-abajo"></div>
+                    <div id="desplegable-oculto2" class="desplegable-oculto animacion-a" style="display: none;">
+                        <p class="letra-large letra-divs">
+                        Modelo TCP/IP y OSI.
+                        <br>Implementación de redes (defaults gateways, switches, IPs, máscaras de red, DNS, DHCPs, etc).
+                        <br>Subnetting.
+                        <br>Tipos de topologias.
+                        <br>Routing estático y dinámico (RIP, OSPF)
+                        <br>Sniffers (wireshark).
+                        <br>Firewall y sus reglas.
+                        <br>Protocolos de encriptación (TLS, SSL)
+                        <br>Control Remoto (SSH, Telnet, RDP, etc).
+                        <br>Protocolos y puertos (ICMP, DNS, DHCP, etc).
+                        <br>VLANs (temario actual)
+                        </p>
+                    </div>
+                <div id="desplegable3" class="desplegable"><h3 class="titulo-desplegable">PROGRAMACIÓN</h3><img id="imagen-desplegable3" src="imagenes/down-arrow.png" class="flecha-abajo"></div>
+                    <div id="desplegable-oculto3" class="desplegable-oculto animacion-a" style="display: none;">
+                        <p class="letra-large letra-divs">
+                        Lenguajes: Python y algo de javascript y bash.
+                        <br>Loops, funciones, tipos de datos, recursividad, etc.
+                        <br>Programas no muy complicados.
+                        <br>Scripting.
+                        <br>Expresiones regulares.
+                        </p>
+                    </div>
+                <div id="desplegable4" class="desplegable"><h3 class="titulo-desplegable">BASES DE DATOS</h3><img id="imagen-desplegable4" src="imagenes/down-arrow.png" class="flecha-abajo"></div>
+                    <div id="desplegable-oculto4" class="desplegable-oculto animacion-a" style="display: none;">
+                        <p class="letra-large letra-divs">
+                        PostgreSQL.
+                        <br>Modelo Entidad-Relación.
+                        <br>DDL (Definición de la estructura y de los elementos).
+                        <br>DML (Insertar, actualizar y eliminar registros)
+                        <br>DQL (Consultas y subconsultas).
+                        <br>Funciones, procedimientos, excepciones...
+                        <br>Tipos de datos y estructuras (records, cursores)
+                        </p>
+                    </div>
+                <div id="desplegable5" class="desplegable"><h3 class="titulo-desplegable">WEB</h3><img id="imagen-desplegable5" src="imagenes/down-arrow.png" class="flecha-abajo"></div>
+                    <div id="desplegable-oculto5" class="desplegable-oculto animacion-a" style="display: none;">
+                        <p class="letra-large letra-divs">
+                        HTML, CSS, XML, JSON.
+                        <br>Desarrollo de páginas webs (por ejemplo esta).
+                        <br>Validación de datos web.
+                        <br>· Lorem Ipsum
+                        <br>· Lorem Ipsum
+                        <br>· Lorem Ipsum
+                        <br>· Lorem Ipsum
+                        <br>· Lorem Ipsum
+                        <br>· Lorem Ipsum
+                        </p>
+                    </div>
+            </div>
+            <div class="segundo-div agrandar-footer" style="height: 20px; margin-top: 0; background-color: transparent; border: none; margin-bottom: 0; min-height: 0; padding: 0;"></div>
+        </div>
+        <footer>
+            <div class="footer-left">
+                <p class="letra-footer titulo-footer">CONTACTO: </p>
+                <p class="letra-footer letra-large"><img src="imagenes/e-mail.png" style="height: 20px; width: 20px; opacity: 0.7;"> &nbsp; efremgg2004@gmail.com</p>
+                <p class="letra-footer letra-large"><img src="imagenes/linkedin.png" style="height: 20px; width: 20px;"> &nbsp; Efrem Gómez</p>
+            </div>
+            <div class="footer-right">
+                <a class="letra-footer letra-large" href="creditos.html">CRÉDITOS</a>
+            </div>
+        </footer>
+    </body>
+</html>

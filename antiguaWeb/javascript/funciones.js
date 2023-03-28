@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Código para aplicar el modo oscuro
       var letralista2 = document.getElementsByClassName("letra-divs");
       for (var i = 0; i < letralista2.length; i++) {
-        letralista2[i].style.color = "white";
+        letralista2[i].style.color = "#c9c9c9";
       }
       /*bodyPrincipal.style.backgroundImage = "linear-gradient(rgba(20, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/body-background3.jpg)";*/
       /*bodyPrincipal.style.backgroundImage = "url(../imagenes/body-background3.jpg)";*/
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
       botondarkmode.style.backgroundColor = "gray";
       var titulosDesplegables = document.getElementsByClassName("titulo-desplegable");
       for (var i = 0; i < titulosDesplegables.length; i++) {
-        titulosDesplegables[i].style.color = "white";
+        titulosDesplegables[i].style.color = "#c9c9c9";
       }
       var imgDesplegables = document.getElementsByClassName("flecha-abajo");
       for (var i = 0; i < imgDesplegables.length; i++) {
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       var titulosdivs = document.getElementsByClassName("titulos-divs");
       for (var i = 0; i < titulosdivs.length; i++) {
-        titulosdivs[i].style.color = "white";
+        titulosdivs[i].style.color = "#c9c9c9";
       }
       modoOscuro = true;
     }

@@ -429,6 +429,9 @@ h1 {
     .agrandar-footer {
         display: none;
     }
+    .footer-left {
+        width: 64%;
+    }
 }
   
 @media screen and (min-width: 767px) and (max-width: 1015px) {
