@@ -20,13 +20,16 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const ImagenPerfilEstrecha = document.body.querySelector('#imagen-perfil-oculta');
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
+    
     );
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
+                navbarToggler.click(); 
+                ImagenPerfilEstrecha.style.display = 'none';
             }
         });
     });
