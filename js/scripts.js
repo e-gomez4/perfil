@@ -7,6 +7,18 @@
 // Scripts
 // 
 
+var dropdownBtn = document.querySelector('.dropdown-btn');
+
+dropdownBtn.addEventListener('click', function() {
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === 'block') {
+    dropdownContent.style.display = 'none';
+  } else {
+    dropdownContent.style.display = 'block';
+  }
+});
+
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element

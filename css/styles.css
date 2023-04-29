@@ -79,6 +79,54 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+.img-idiomas {
+  width: 16px; 
+  height: 15px;
+  margin-right: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 *,
 *::before,
 *::after {
